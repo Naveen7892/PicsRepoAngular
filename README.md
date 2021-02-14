@@ -1,27 +1,23 @@
-# PicsRepoClient
+**Server is hosted at:** https://pics-repo-server.herokuapp.com/
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.0.
+**Client is hosted at:** https://pics-repo-angular.herokuapp.com/
 
-## Development server
+**Database used:** Postgres (hosted in Heroku)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+**Source Code Links at Github:**
 
-## Code scaffolding
+https://github.com/Naveen7892/PicsRepoServer
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+https://github.com/Naveen7892/PicsRepoAngular
 
-## Build
+**Screenshots:**
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+![enter image description here][1]
 
-## Running unit tests
+![enter image description here][2]
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+![enter image description here][3]
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+  [1]: https://he-s3.s3.amazonaws.com/media/uploads/04edad2.png
+  [2]: https://he-s3.s3.amazonaws.com/media/uploads/23decd8.png
+  [3]: https://he-s3.s3.amazonaws.com/media/uploads/2aa4f37.png

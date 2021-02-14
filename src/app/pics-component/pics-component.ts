@@ -22,8 +22,8 @@ export class PicsComponent implements OnInit {
   }
 
   sortDates = [
-    { sortType: 'Asc', icon: 'keyboard_arrow_up', value: 'd' },
-    { sortType: 'Desc', icon: 'keyboard_arrow_down', value: '-d' }]
+    { sortType: 'Date', icon: 'keyboard_arrow_up', value: 'd' },
+    { sortType: 'Date (reversed)', icon: 'keyboard_arrow_down', value: '-d' }]
 
   openDialog() {
     const dialogRef = this.dialog.open(MatDialogComponent);
