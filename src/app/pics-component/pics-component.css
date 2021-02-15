@@ -5,3 +5,7 @@
 .example-form-field {
     width: 200px;
 }
+
+mat-card {
+    margin-bottom: 10px;
+}

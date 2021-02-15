@@ -15,38 +15,37 @@ export class MatDialogComponent {
   title = 'MatDialogComponentClient';
   picModel = new PicsModel();
   picsList = new Array<PicsModel>();
-  loader:boolean = false;
+  loader: boolean = false;
 
-  constructor(public dialogRef: MatDialogRef<MatDialogComponent>,private _snackBar: MatSnackBar, private matDialogService: MatDialogService) {}
+  constructor(public dialogRef: MatDialogRef<MatDialogComponent>, private _snackBar: MatSnackBar, private matDialogService: MatDialogService) { }
 
 
   ngOnInit() { }
 
   uploadImage() {
-    this.loader=true;
-    console.log("uploadImage method calling");
-    if (this.picModel.Name != null && this.picModel.File != null) {      
+    this.loader = true;
+    if (this.picModel.Name != null && this.picModel.File != null) {
       this.matDialogService.uploadPics(this.picModel).subscribe(res => {
         console.log(res);
         this.dialogRef.close({
           cancelled: true
         });
-        this.loader=false;
+        this.loader = false;
       }, err => {
         console.log(err);
         this.dialogRef.close({
           cancelled: false
         });
-        this.loader=false;
+        this.loader = false;
       });
-    }   
+    }
     else {
-      this._snackBar.open("Choose Photo Mandatory!","", {
+      this._snackBar.open("Choose Photo Mandatory!", "", {
         duration: 3000,
       });
-      this.loader=false;
-    } 
-    
+      this.loader = false;
+    }
+
   }
 
   closeDialog() {

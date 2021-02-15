@@ -36,7 +36,10 @@ export class PicsComponent implements OnInit {
 
   refresh() {
     this.picService.getPics(this.sortOrder, this.searchvalue).subscribe(res => {
+
       this.picsList = res;
+
+
     }, err => {
       console.log(err);
     });
